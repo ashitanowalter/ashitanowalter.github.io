@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="utf-8" />
+        <title>mkvmerge GUI</title>
+        <link rel="stylesheet" href="http://www.ashitanowalter.moe/theme/css/main.css" />
+        <link href="http://www.ashitanowalter.moe/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Ashita no Walter Atom Feed" />
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><img src="http://www.ashitanowalter.moe/theme/images/logoanw.png"></img>Ashita no Walter </h1>
+                <nav><ul>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="http://www.ashitanowalter.moe/pages/proyectos-en-curso.html">Proyectos en curso</a></li>
+                    <li><a href="http://www.ashitanowalter.moe/pages/coleccion.html">Colección</a></li>
+                    <li><a href="http://www.ashitanowalter.moe/pages/sobre-nosotros.html">Sobre nosotros</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+    <h1 class="entry-title">mkvmerge GUI</h1>
+    
+    <hr />
+<h1>1. Introducción</h1>
+<h2>-¿Qué es Matroska?</h2>
+<h2>-¿Qué es mkvmerge GUI?</h2>
+<h1>2. Pestaña - Entrada:</h1>
+<h2>-¿Qué es lo que contiene?</h2>
+<h2>-¿Cómo crear un archivo Matroska (MKV)?</h2>
+<h2>-¿Cómo añadir archivos?</h2>
+<h2>-¿Cuál es la diferencia entre archivos y pistas?</h2>
+<h2>-¿Cómo configurar las pistas?</h2>
+<h2>-¿Cómo unir archivos?</h2>
+<h2>-¿Cómo utilizar la <em>Lista de tareas</em>?</h2>
+<h1>3. Pestaña - Adjuntos:</h1>
+<h2>-¿Qué es lo que contiene?</h2>
+<h2>- ¿Qué son los archivos adjuntos?</h2>
+<h2>-¿Cómo adjuntar archivos?</h2>
+<h1>4. Pestaña - Opciones generales:</h1>
+<h2>-¿Qué es lo que contiene?</h2>
+<h2>-¿Cómo dividir un archivo?</h2>
+<h2>-¿Cómo agregar capítulos?</h2>
+<h1>5. Pestaña - Editor de capítulos:</h1>
+<h2>-¿Qué es lo que contiene?</h2>
+<h2>-¿Qué son los capítulos y para que sirven?</h2>
+<h2>-¿Cómo crear un archivo de capítulos?</h2>
+<hr />
+<h1>1. Introducción:</h1>
+<h2>¿Qué es Matroska?</h2>
+<p>Matroska es un formato contenedor de estándar abierto, un archivo informático que puede contener una cantidad ilimitada de vídeo, audio, imagen o pistas de subtítulos dentro de un solo archivo. Su finalidad es la de servir como formato universal para el almacenamiento de contenidos audiovisuales y multimedia, como películas o programas de televisión, videojuegos, imágenes y textos. No es un codec de video como H.264/MPEG-4 AVC o vorbis, sino que es un contenedor que envuelve audio, video y subtítulos dentro de un mismo paquete, y que permite reproducir el archivo tanto en ordenadores como en otros dispositivos con la suficiente potencia de procesamiento.</p>
+<p><a href="http://www.matroska.org/">http://www.matroska.org/</a></p>
+<h2>¿Qué es mkvmerge GUI?</h2>
+<p>Mkvmerge es un programa que puede leer una gran cantidad de archivos multimedia y poner su contenido en archivos Matroska. Se encuentra disponible tanto para Linux/Unix como para Windows.</p>
+<p><a href="https://www.bunkus.org/videotools/mkvtoolnix/">https://www.bunkus.org/videotools/mkvtoolnix/</a></p>
+<hr />
+<h1>2. Pestaña - Entrada:</h1>
+<h2>¿Qué es lo que contiene?</h2>
+<p>Las pestaña <em>Entrada</em> está dividida en cuatro partes principales:</p>
+<ul>
+<li><em>Archivos de entrada:</em></li>
+</ul>
+<p><img alt="mkvmerge_entrada_ae" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_entrada_ae.jpg" /></p>
+<p>Aquí en donde aparecerán todos lo archivos que agreguemos.</p>
+<ul>
+<li><em>Pistas:</em></li>
+</ul>
+<p><img alt="mkvmerge_entrada_p" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_entrada_p.jpg" /></p>
+<p>Se muestran las pistas correspondientes a los archivos agregados.</p>
+<ul>
+<li><em>Opciones de pista:</em></li>
+</ul>
+<p><img alt="mkvmerge_entrada_op" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_entrada_op.jpg" /></p>
+<p>Aquí se definen aspectos propios de cada pista.</p>
+<ul>
+<li><em>Archivo de salida:</em></li>
+</ul>
+<p><img alt="mkvmerge_entrada_as" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_entrada_as.jpg" /></p>
+<p>Se define el nombre del archivo MKV de salida. Es común a las cuatro pestañas de la aplicación (<em>Entrada</em>, <em>Adjuntos</em>, <em>Opciones generales</em> y <em>Editor de capítulos</em>).</p>
+<h2>¿Cómo crear un archivo Matroska (MKV)?</h2>
+<p>Para crear un archivo MKV primero es necesario agregar algún archivo multimedia, luego elegir la ruta y nombre del archivo de salida, y finalmente seleccionar la opción <em>Iniciar multiplexado</em>.<br />
+La ruta de salida por defecto es la misma de la cual proviene el primero de los archivos agregados. El nombre por defecto es el mismo del primer archivo agregado solo que con extención <em>.mkv</em>. En caso de que el primer archivo agregado sea un MKV, el nombre de salida será el mismo solo que agregará un número para no sobreescribirlo quedando <em>nombre_primer_archivo_entrada.mkv (#)</em>, donde # = 1,2,...,n.</p>
+<h2>¿Cómo añadir archivos?</h2>
+<p>En el área de archivos de entrada selecionar el botón <em>Añadir</em>. Se desplegará un menú que nos permitira elegir los archivos que queramos incluir.<br />
+Se pueden añadir archivos multimedia (video y audio) de cualquier tipo y también archivos de subtítulos.<br />
+En el área de pistas aparecerán automáticamente las pistas correspondientes a los archivos agregados (todas incluidas por defecto) y también los valores por defecto del archivo de salida.</p>
+<h2>¿Cuál es la diferencia entre archivos y pistas?</h2>
+<p>Básicamente, un archivo está compuesto por pistas. Por ejemplo, al agregar un archivo MP4 o AVI, aparecerán automáticamente dos pistas, una de video y una de audio (ya que estos formatos no admiten subtítulos flotantes ni soporte para varias pistas de audio); si agregamos un archivo MP3/AAC/M4A/FLAC/WAV/etc, solo aparecerá una pista que será de audio; si agregamos un archivos de subtítulos SRT/SSA/ASS/VOBSUB/PGS/etc, solo aparecerá una pista de subtítulos; si agregamos un archivo MKV u OGM es probable que aparezcan una pista de video, una o varias de audio, una o varias de subtítulos y alguna que otra pista de capítulos/etiquetas.</p>
+<h2>¿Cómo configurar las pistas?</h2>
+<p><img alt="mkvmerge_entrada_conf_p" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_entrada_conf_p.jpg" /></p>
+<p>Como pueden ver he agregado dos archivos. El primero en un MKV que contiene tres pistas (Video, audio y subtítulos). El segundo es un archivo de subtítulos ASS.<br />
+Obsérvese las pistas tienen un <em>checkbox</em>, las que estén marcadas formarán parte del archivo MKV de salida mientras que las que no lo estén serán descartadas. Una buena práctica de <em>encoder</em> es ordenar las pistas siguiendo la estructura <em>video-&gt; audios -&gt; subtítulos</em>. Para ordenar las pistas seleccione de a una y utilice los comandos <em>Subir</em> y <em>Bajar</em>.<br />
+El área de opciones de pista tiene tres pestañas: <em>Opciones generales de la pista</em>, <em>Opciones específicas de formato</em> y <em>Opciones adicionales</em>. Solo utilizaremos la primera de ellas ya que las otras dos son para el uso de usuarios más avanzados y no viene al caso explicar su funcionamiento porque es poco probable que alguna vez las utilicen.</p>
+<p>Dentro de las <em>Opciones generales de la pista</em> utilizaremos:</p>
+<ul>
+<li>
+<p><em>Nombre de pista:</em><br />
+Aquí pueden escribir lo que deseen. Este campo se puede dejar vacío. Por ejemplo, en la pista de subtítulos correspondiente a los episodios de <em>City Hunter 2</em> suelo colocar como nombre <em>Ashita no Walter</em>.</p>
+</li>
+<li>
+<p><em>Idioma:</em><br />
+Aquí se seleciona el idioma de la pista. Es algo inútil para la pista de video (ya que no tiene un idioma en particular) por lo que es recomendable dejarla con indefinida.</p>
+</li>
+<li>
+<p><em>Flag de pista predefinida/forzada:</em><br />
+Son bastante similares, la primera se confia del reproductor de video mientras que la segunda no. Como buena práctica es recomendable colocar lo mismo en ambas para cada pista.<br />
+Por ejemplo, tengo 7 pistas. Una de video (V1), tres de audio (A1, A2 y A3) y tres de subtítulos (S1, S2 y S3). La pista de video se verá siempre sea cual sea el caso pero de igual modo colocamos ambos <em>Flags</em> en <em>Si</em>. De las pistas de audio queremos que A2 sea reproducida por defecto, entonces le colocamos ambos <em>Flags</em> en <em>Si</em> mientras que a las dos restantes se los colocamos en <em>No</em>. De las pistas de subtítulos queremos que no se vea ninguna por defecto entonces colocamos ambos <em>Flags</em> en <em>No</em> para todas ellas.<br />
+Con esto determinamos los valores por defecto de reproducción, con su reproductor multimedia usted prodrá elegir las otras pistas en caso de así desearlo.</p>
+</li>
+</ul>
+<h2>¿Cómo unir archivos?</h2>
+<p>Para poder unir archivos hay que tener ciertas consideraciones en claro, <strong>es posible</strong> unir <em>Manzanas</em> con <em>Manzanas</em>, <em>Naranjas</em> con <em>Naranjas</em> y <em>Peras</em> con <em>Peras</em>, pero <strong>no es posible</strong> unir <em>Manzanas</em> con <em>Naranjas</em> o <em>Naranjas</em> con <em>Peras</em>. Aunque parezca muy tonto, es una forma muy práctica de entenderlo.<br />
+En un principio, las pista a unir deben ser del <strong>mismo tipo</strong> (Video con video, audio con audio, subtítulos con subtítulos, etc), poseer el <strong>mismo codec</strong> (h264 con h264, MP3 con MP3, pero no MP4 con AVI o FLAC con WAV) y tener los <strong>mismos parámetros</strong> (misma: resolución, fps, taza de muestreo, número de canales, entre otros).  </p>
+<p>Comenzamos añadiendo el primero de los archivos a unir utilizando el botón <em>Añadir</em>. Luego selecionamos un archivo a unir pero esta vez utilizando el botón <em>Unir</em>.</p>
+<p><img alt="mkvmerge_entrada_unir" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_entrada_unir.jpg" /></p>
+<p>Como pueden observar, he decidido unir al archivo <em>25.mkv</em> los archivos <em>26.mkv</em> y <em>27.mkv</em>, además se ve que los archivos a unir comienzan con <em>++&gt;</em>. Las pistas se han ordenado así por si solas, el video/audio/subtítulos del primero seguido de los videos/audios/subtítulos de los otros dos. Es importante destacar que un archivo que comienza con <em>++&gt;</em> nunca puede estar en primer lugar.  </p>
+<p>Esta es una opción y muy poderosa ya que no es necesario recodificar. El archivo resultante contendrá una pista de video, una de audio y una de subtítulos, las cuales son una concatenación de las pistas correspondientes de los archivos utilizados.</p>
+<h2>¿Cómo utilizar la <em>Lista de tareas</em>?</h2>
+<p>La <em>Lista de tareas</em> es lo que normalmente se conoce como cola de trabajo, donde se añaden varias tareas que se irán realizando una después de la otra conforme vayan terminando.<br />
+Para utilizarla, primero defines el archivo MKV a crear (Utilizando todo la aprendido hasta el momento). Luego, con todo listo para crear dicho archivo, en lugar de utilizar el botón <em>Iniciar multiplexado</em> utilizamos en botón <em>Añadir a la lista de tareas</em>. Se nos preguntará el nombre para la tarea que estamos añadiendo (Utilizar el valor por defecto no está de más), lo colocamos, aceptamos y con eso ya hemos agregado una tareas a la lista.<br />
+Podemos utilizar los botones <em>Quitar</em> o <em>Quitar todos</em> del área de archivos de entrada para comenzar a crear un nuevo MKV.<br />
+Una vez que terminemos de añadir todas las tareas que deaseamos, iremos a la lista para comenzar a utilizar. Para ello se puede utilizar el acceso directo Ctrl+J o ir al menú <em>Multiplexado</em> y selecionamos la opción <em>Gestionar tareas</em>.</p>
+<p><img alt="mkvmerge_entrada_ldt" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_entrada_ldt.jpg" /></p>
+<p>Como pueden ver he añadido tres tareas a la lista.</p>
+<ul>
+<li>Se pueden reordenar utilizando los botones <em>Subir</em> y <em>Bajar</em>.  </li>
+<li>Los botones <em>Rehabilitar</em> y <em>Deshabilitar</em> se utilizan para definir que trabajo se realizaran o no se realizaran sin tener que quitarlos de la lista.  </li>
+<li><em>Eliminar</em> quita a las tareas seleccionadas de la lista.  </li>
+<li><em>Listo</em> simplemente cierra la ventana de <em>Mantenimiento de la lista de tareas</em>.  </li>
+<li><em>Iniciar</em> comienza a ejecutar todas las tareas habilitadas.  </li>
+<li><em>Iniciar selección</em> ejecuta todas la tareas habilitadas siempre y cuando se encuentren seleccionadas.  </li>
+</ul>
+<hr />
+<h1>3. Pestaña - Adjuntos:</h1>
+<h2>-¿Qué es lo que contiene?</h2>
+<ul>
+<li><em>Archivos adjuntos:</em></li>
+</ul>
+<p><img alt="mkvmerge_adjuntos_aa" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_adjuntos_aa.jpg" /></p>
+<p>Aquí aparecen los archivos que se encuantran adjuntados en los archivos de entrada.</p>
+<ul>
+<li><em>Adjuntos:</em></li>
+</ul>
+<p><img alt="mkvmerge_adjuntos_a" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_adjuntos_a.jpg" /></p>
+<p>Aquí es donde colocamos nuevos archivos que queramos adjuntar.</p>
+<h2>- ¿Qué son los archivos adjuntos?</h2>
+<p>Los archivos adjuntos sirven para proveer información adicional acerca del archivo. Por ejemplo, fotos de tapas de CD o información adicional en formato texto, pero la más importante es la posibilidad de adjuntar fuentes (Tipos de letra). Esto se debe a que si nos llega un archivo MKV con subtítulos ASS los cuales usan una fuente determinada que no se encuentra instalada en nuestro ordenador, los reproductores multimedia buscarán generar un caché de fuentes utilizando alguna que si tengamos instalada lo que conllevará algo de tiempo. En cambio, si esa fuente no instalada se encuentra adjuntada en el archivo no habrá ningún problema a la hora de la reproducción.</p>
+<h2>-¿Cómo adjuntar archivos?</h2>
+<p>Dentro del área <em>Archivos adjuntos</em> aparecen los adjuntos de los archivos de entrada cargados, cada uno posee un <em>checkbox</em> con los que podemos seleccionar cuales se quedarán y cuales no. Los botones <em>Habilitar todo</em> y <em>Deshabilitar todo</em> ayudan un poco en esta tarea.<br />
+Si queremos adjuntar nuevos archivos nos vamos al área <em>Adjuntos</em> y con el botón <em>Añadir</em> elegimos los elemento que necesitemos. También podemos colocarles un nombre y una descripción. No tocaremos nada de los campos <em>Tipo MIME</em> y <em>Estilo del archivo adjunto</em>.</p>
+<hr />
+<h1>4. Pestaña - Opciones generales:</h1>
+<h2>-¿Qué es lo que contiene?</h2>
+<ul>
+<li><em>Opciones generales:</em></li>
+</ul>
+<p><img alt="mkvmerge_opciones_generales_og" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_opciones_generales_og.jpg" /></p>
+<p>Utilizaremos esta sección para colocarle un título al archivo, este aparecerá luego en la barra de menú de los reproductores multimedia.</p>
+<p><img alt="mkvmerge_opciones_generales_titulo" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_opciones_generales_titulo.jpg" /></p>
+<ul>
+<li><em>División:</em></li>
+</ul>
+<p><img alt="mkvmerge_opciones_generales_div" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_opciones_generales_div.jpg" /></p>
+<p>Así como con esta aplicación podemos unir archivos, también podemos dividirlos.</p>
+<ul>
+<li><em>Enlace de archivo/segmento:</em></li>
+</ul>
+<p><img alt="mkvmerge_opciones_generales_eas" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_opciones_generales_eas.jpg" /></p>
+<p>Se utiliza para vincular los archivos divididos pero no utilizaremos esta función.</p>
+<ul>
+<li><em>Capítulos:</em></li>
+</ul>
+<p><img alt="mkvmerge_opciones_generales_caps" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_opciones_generales_caps.jpg" /></p>
+<p>Sirve para agregar capítulos a nuestro archivo.</p>
+<h2>-¿Cómo dividir un archivo?</h2>
+<p>Para poder dividir un archivo primero es necesario definir un <em>Modo de corte</em>:</p>
+<ul>
+<li>
+<p><em>No dividir:</em> El archivo no será dividido.</p>
+</li>
+<li>
+<p><em>Dividir según el tamaño:</em> </p>
+</li>
+<li>
+<p><em>Dividir según la duración:</em></p>
+</li>
+<li><em>Dividir según los códigos de tiempo:</em></li>
+<li><em>Dividir en partes según los códigos de tiempo:</em></li>
+<li><em>Dividir en partes según los números de fotograma/campo:</em></li>
+<li><em>Dicidir según los números de fotograma/campo:</em></li>
+<li><em>Dividir según los capítulos:</em></li>
+</ul>
+<h2>-¿Cómo agregar capítulos?</h2>
+<hr />
+<h1>5. Pestaña - Editor de capítulos:</h1>
+<h2>-¿Qué es lo que contiene?</h2>
+<h2>-¿Qué son los capítulos y para que sirven?</h2>
+<h2>-¿Cómo crear un archivo de capítulos?</h2>
+<hr />
+    
+    <div class="comments">
+      <h2>Comentarios</h2>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_shortname = 'ashitanowalter';
+        var disqus_identifier = 'pages/mkvmerge-gui.html';
+        var disqus_url = 'http://www.ashitanowalter.moe/pages/mkvmerge-gui.html';
+        (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//ashitanowalter.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Por favor habilita JavaScript para ver los comentarios.</noscript>
+    </div>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>enlaces</h2>
+                        <ul>
+                            <li><a href="/archives.html"><span class="icon-archive"></span> Archivo del blog</a></li>
+                            <li><a href="/tags.html"><span class="icon-tags"></span> Tags</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://www.ashitanowalter.moe/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">Feed Atom</a></li>
+
+                            <li><a href="https://twitter.com/ashitanowalter">Twitter</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+            <p id="about">
+                <span class="icon-smile-o"></span> Ashita no Walter. <em>"Mientras haya Walter, habrá un mañana".</em>
+            </p>
+        </footer>
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-58048221-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+<script type="text/javascript">
+    var disqus_shortname = 'ashitanowalter';
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+</body>
+</html>
