@@ -59,6 +59,7 @@
 <li><a href="#como-crear-un-archivo-de-capitulos">¿Cómo crear un archivo de capítulos?</a></li>
 </ul>
 </li>
+<li><a href="#6-editor-de-encabezado">6. Editor de encabezado:</a></li>
 </ul>
 </div>
 <hr />
@@ -240,8 +241,43 @@ Ejemplo: Si tengo un archivo cuyo resultado de su división serán 20 archivos, 
 <hr />
 <h1 id="5-pestana-editor-de-capitulos">5. Pestaña - Editor de capítulos:</h1>
 <h2 id="que-es-lo-que-contiene_3">¿Qué es lo que contiene?</h2>
+<p><img alt="mkvmerge_editor_capitulos" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_editor_capitulos.jpg" /></p>
+<p>Prácticamente toda esta pestaña contiene al editor de capítulos en si.</p>
 <h2 id="que-son-los-capitulos-y-para-que-sirven">¿Qué son los capítulos y para que sirven?</h2>
+<p>Un capítulo es una entidad compuesta por cuatro partes: UID de la pista a la que se aplica, un nombre/título, un tiempo de inicio y una codificación de lenguaje asociada, a los que se le pueden sumar otros datos adicionales.<br />
+Dicho de manera más simple, son sectores del video delimitados por tiempos que conllevan una etiqueta para diferenciarlos.</p>
+<p><img alt="mkvmerge_editor_capitulos_ejemplo" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_editor_capitulos_ejemplo.jpg" /></p>
+<p>Como pueden observar en la imagen, al colocar el cursor sobre la línea de tiempo del reproductor aparecen unas marcas que indican los capítulos y dependiendo de sobre cual estemos apuntando, saldrá un indicador con su nombre correspondiente (En este caso <em>Opening</em>).</p>
+<p>La ventaja principal de la utilización de capítulos es que lo reproductores multimedia permiten saltar la reproducción al anterior o siguiente capítulo. De este modo y para el caso de la imagen, en lugar de tener que saltar el <em>opening</em> manualmente buscando donde termina, solo se tiene que usar una combinación de teclas propia de cada reproductor (Shift+n en el caso del VLC) que los lleve al siguiente capítulo.</p>
 <h2 id="como-crear-un-archivo-de-capitulos">¿Cómo crear un archivo de capítulos?</h2>
+<p>Exiten dos formas de crear archivos de capítulos. La primera es utilizando el editor de capítulos dando como resultado un archivo XML. La segunda es simplemente crear un archivo de texto con formato de capítulos OGM. Los archivos XML son muy buenos y tienen mucho potencial, sin embargo, esto solo será útil para aquellos usuarios muy experimentados que quieran realizar alguna tarea muy específica. Por otro lado, el formato OGM de capítulos es muy simple y fácil de entender y de crear, razón por la cual lo recomiendo.</p>
+<p>Supongase que se desean crear los capítulos: <em>Opening</em>, <em>Introducción</em>, <em>Parte A</em>, <em>Parte B</em>, <em>Ending</em> y <em>Próximamente</em>, para un episodio de <em>City Hunter</em> utilizando el formato de capítulos OGM, entonces la estructura del archivo de texto será:</p>
+<p>CHAPTER01=00:00:00.000<br />
+CHAPTER01NAME=Opening<br />
+CHAPTER02=00:01:32.000<br />
+CHAPTER02NAME=Introducción<br />
+CHAPTER03=00:02:14.000<br />
+CHAPTER04NAME=Parte A<br />
+CHAPTER06=00:10:48.000<br />
+CHAPTER06NAME=Parte B<br />
+CHAPTER07=00:22:27.000<br />
+CHAPTER07NAME=Ending<br />
+CHAPTER08=00:23:36.000<br />
+CHAPTER08NAME=Proximamente  </p>
+<p>Esto se lee como:<br />
+Desde el tiempo 00:00:00.000 al 00:01:32.000 se encuentra el <em>Opening</em>.<br />
+Desde el tiempo 00:01:32.000 al 00:02:14.000 se encuentra el <em>Introducción</em>.<br />
+Desde el tiempo 00:02:14.000 al 00:10:48.000 se encuentra el <em>Parte A</em>.<br />
+Desde el tiempo 00:10:48.000 al 00:22:27.000 se encuentra el <em>Parte B</em>.<br />
+Desde el tiempo 00:22:27.000 al 00:23:36.000 se encuentra el <em>Ending</em>.<br />
+Desde el tiempo 00:23:36.000 hasta el final se encuentra el <em>Proximamente</em>.  </p>
+<p>Los capítulos comienzan desde el 01.<br />
+El tiempo de inicio se identifica con <em>CHAPTER##=</em>.<br />
+La etiqueta se coloca con <em>CHAPTER##NAME=</em>.<br />
+Los tiempos tiene el formato HH:MM:SS.mmm.<br />
+A los tiempos los deben obtener manualmente del archivo de video.  </p>
+<hr />
+<h1 id="6-editor-de-encabezado">6. Editor de encabezado:</h1>
 <hr />
     
     <div class="comments">
