@@ -25,124 +25,83 @@
 <section id="content" class="body">
     <h1 class="entry-title">mkvmerge GUI</h1>
     
-    <div class="toc">
-<ul>
-<li><a href="#1-introduccion">1. Introducción:</a><ul>
-<li><a href="#que-es-matroska">¿Qué es Matroska?</a></li>
-<li><a href="#que-es-mkvmerge-gui">¿Qué es mkvmerge GUI?</a></li>
-</ul>
-</li>
-<li><a href="#2-pestana-entrada">2. Pestaña - Entrada:</a><ul>
-<li><a href="#que-es-lo-que-contiene">¿Qué es lo que contiene?</a></li>
-<li><a href="#como-crear-un-archivo-matroska-mkv">¿Cómo crear un archivo Matroska (MKV)?</a></li>
-<li><a href="#como-anadir-archivos">¿Cómo añadir archivos?</a></li>
-<li><a href="#cual-es-la-diferencia-entre-archivos-y-pistas">¿Cuál es la diferencia entre archivos y pistas?</a></li>
-<li><a href="#como-configurar-las-pistas">¿Cómo configurar las pistas?</a></li>
-<li><a href="#como-unir-archivos">¿Cómo unir archivos?</a></li>
-<li><a href="#como-utilizar-la-lista-de-tareas">¿Cómo utilizar la Lista de tareas?</a></li>
-</ul>
-</li>
-<li><a href="#3-pestana-adjuntos">3. Pestaña - Adjuntos:</a><ul>
-<li><a href="#que-es-lo-que-contiene_1">¿Qué es lo que contiene?</a></li>
-<li><a href="#que-son-los-archivos-adjuntos">¿Qué son los archivos adjuntos?</a></li>
-<li><a href="#como-adjuntar-archivos">¿Cómo adjuntar archivos?</a></li>
-</ul>
-</li>
-<li><a href="#4-pestana-opciones-generales">4. Pestaña - Opciones generales:</a><ul>
-<li><a href="#que-es-lo-que-contiene_2">¿Qué es lo que contiene?</a></li>
-<li><a href="#como-dividir-un-archivo">¿Cómo dividir un archivo?</a></li>
-<li><a href="#como-agregar-capitulos">¿Cómo agregar capítulos?</a></li>
-</ul>
-</li>
-<li><a href="#5-pestana-editor-de-capitulos">5. Pestaña - Editor de capítulos:</a><ul>
-<li><a href="#que-es-lo-que-contiene_3">¿Qué es lo que contiene?</a></li>
-<li><a href="#que-son-los-capitulos-y-para-que-sirven">¿Qué son los capítulos y para qué sirven?</a></li>
-<li><a href="#como-crear-un-archivo-de-capitulos">¿Cómo crear un archivo de capítulos?</a></li>
-</ul>
-</li>
-<li><a href="#6-editor-de-encabezado">6. Editor de encabezado:</a><ul>
-<li><a href="#para-que-sirve-el-editor-de-encabezado">¿Para qué sirve el editor de encabezado?</a></li>
-<li><a href="#como-utilizar-el-editor-de-encabezado">¿Cómo utilizar el editor de encabezado?</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<hr />
-<h1 id="1-introduccion">1. Introducción:</h1>
-<h2 id="que-es-matroska">¿Qué es Matroska?</h2>
+    <p>[TOC]</p>
+<hr>
+<h1>1. Introducción:</h1>
+<h2>¿Qué es Matroska?</h2>
 <p><a href="https://es.wikipedia.org/wiki/Matroska">Matroska</a> es un formato contenedor de estándar abierto, un archivo informático que puede contener una cantidad ilimitada de video, audio, imagen o pistas de subtítulos dentro de un solo archivo. Su finalidad es la de servir como formato universal para el almacenamiento de contenidos audiovisuales y multimedia, como películas o programas de televisión, videojuegos, imágenes y textos. No es un códec de video como <a href="https://es.wikipedia.org/wiki/H.264/MPEG-4_AVC">H.264/MPEG-4 AVC</a> o <a href="https://es.wikipedia.org/wiki/Vorbis">Vorbis</a>, sino que es un contenedor que envuelve audio, video y subtítulos dentro de un mismo paquete, y que permite reproducir el archivo tanto en ordenadores como en otros dispositivos con la suficiente potencia de procesamiento.</p>
 <p><a href="http://www.matroska.org/">http://www.matroska.org/</a></p>
-<h2 id="que-es-mkvmerge-gui">¿Qué es mkvmerge GUI?</h2>
+<h2>¿Qué es mkvmerge GUI?</h2>
 <p>Mkvmerge es un programa que puede leer una gran cantidad de archivos multimedia y poner su contenido en archivos Matroska (archivos con extensión .MKV). Mkvmerge GUI es una interfaz gráfica para mkvmerge. Se encuentra disponible tanto para Linux/Unix como para Windows. El siguiente tutorial está basado en la versión 7.9.0 del mismo.</p>
 <p><a href="https://www.bunkus.org/videotools/mkvtoolnix/">https://www.bunkus.org/videotools/mkvtoolnix/</a></p>
-<hr />
-<h1 id="2-pestana-entrada">2. Pestaña - Entrada:</h1>
-<h2 id="que-es-lo-que-contiene">¿Qué es lo que contiene?</h2>
+<hr>
+<h1>2. Pestaña - Entrada:</h1>
+<h2>¿Qué es lo que contiene?</h2>
 <p>La pestaña <em>Entrada</em> está dividida en cuatro partes principales:</p>
 <ul>
 <li><strong><em>Archivos de entrada:</em></strong></li>
 </ul>
-<p><img alt="mkvmerge_entrada_ae" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_entrada_ae.jpg" /></p>
+<p><img alt="mkvmerge_entrada_ae" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_entrada_ae.jpg"></p>
 <p>Aquí es en donde aparecerán todos lo archivos que se agreguen.</p>
 <ul>
 <li><strong><em>Pistas:</em></strong></li>
 </ul>
-<p><img alt="mkvmerge_entrada_p" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_entrada_p.jpg" /></p>
+<p><img alt="mkvmerge_entrada_p" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_entrada_p.jpg"></p>
 <p>Se muestran las pistas correspondientes a los archivos agregados.</p>
 <ul>
 <li><strong><em>Opciones de pista:</em></strong></li>
 </ul>
-<p><img alt="mkvmerge_entrada_op" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_entrada_op.jpg" /></p>
+<p><img alt="mkvmerge_entrada_op" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_entrada_op.jpg"></p>
 <p>Aquí se definen aspectos propios de cada pista.</p>
 <ul>
 <li><strong><em>Archivo de salida:</em></strong></li>
 </ul>
-<p><img alt="mkvmerge_entrada_as" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_entrada_as.jpg" /></p>
+<p><img alt="mkvmerge_entrada_as" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_entrada_as.jpg"></p>
 <p>Se define el nombre del archivo MKV de salida. Es común a las cuatro pestañas de la aplicación (<em>Entrada</em>, <em>Adjuntos</em>, <em>Opciones generales</em> y <em>Editor de capítulos</em>).</p>
-<h2 id="como-crear-un-archivo-matroska-mkv">¿Cómo crear un archivo Matroska (MKV)?</h2>
-<p>Para crear un archivo MKV primero es necesario agregar algún archivo multimedia, luego elegir la ruta y nombre del archivo de salida, y finalmente seleccionar la opción <em>Iniciar multiplexado</em>.<br />
+<h2>¿Cómo crear un archivo Matroska (MKV)?</h2>
+<p>Para crear un archivo MKV primero es necesario agregar algún archivo multimedia, luego elegir la ruta y nombre del archivo de salida, y finalmente seleccionar la opción <em>Iniciar multiplexado</em>.<br>
 La ruta de salida por defecto es la misma de la cual proviene el primero de los archivos agregados. El nombre por defecto es el mismo del primer archivo agregado sólo que con extensión <em>.mkv</em>. En caso de que el primer archivo agregado sea un MKV, el nombre de salida será el mismo sólo que agregará un número para no sobrescribirlo quedando <em>nombre_primer_archivo_entrada.mkv (#)</em>, donde # = 1, 2, ..., n.</p>
-<h2 id="como-anadir-archivos">¿Cómo añadir archivos?</h2>
-<p>En el área de archivos de entrada seleccionar el botón <em>Añadir</em>. Se desplegará un menú que permitirá elegir los archivos que se quieran incluir.<br />
-Se pueden añadir archivos multimedia (video y audio) de cualquier tipo y también archivos de subtítulos.<br />
+<h2>¿Cómo añadir archivos?</h2>
+<p>En el área de archivos de entrada seleccionar el botón <em>Añadir</em>. Se desplegará un menú que permitirá elegir los archivos que se quieran incluir.<br>
+Se pueden añadir archivos multimedia (video y audio) de cualquier tipo y también archivos de subtítulos.<br>
 En el área de pistas aparecerán automáticamente las pistas correspondientes a los archivos agregados (todas incluidas por defecto) y también los valores por defecto del archivo de salida.</p>
-<h2 id="cual-es-la-diferencia-entre-archivos-y-pistas">¿Cuál es la diferencia entre archivos y pistas?</h2>
+<h2>¿Cuál es la diferencia entre archivos y pistas?</h2>
 <p>Básicamente, un archivo está compuesto por pistas. Por ejemplo, al agregar un archivo MP4 o AVI, aparecerán automáticamente dos pistas, una de video y una de audio (ya que estos formatos no admiten subtítulos flotantes ni soporte para varias pistas de audio); si se agrega un archivo MP3/AAC/M4A/FLAC/WAV/etc., sólo aparecerá una pista que será de audio; si se agrega un archivo de subtítulos SRT/SSA/ASS/VOBSUB/PGS/etc., sólo aparecerá una pista de subtítulos; si se agrega un archivo MKV u OGM es probable que aparezcan una pista de video, una o varias de audio, una o varias de subtítulos y alguna que otra pista de capítulos/etiquetas.</p>
-<h2 id="como-configurar-las-pistas">¿Cómo configurar las pistas?</h2>
-<p><img alt="mkvmerge_entrada_conf_p" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_entrada_conf_p.jpg" /></p>
-<p>Como se puede ver en la imagen se han agregado dos archivos. El primero es un MKV que contiene tres pistas (video, audio y subtítulos). El segundo es un archivo de subtítulos ASS.<br />
-Obsérvese que las pistas tienen un <em>checkbox</em>, las que estén marcadas formarán parte del archivo MKV de salida mientras que las que no lo estén serán descartadas. Una buena práctica de <em>encoder</em> es ordenar las pistas siguiendo la estructura <em>video -&gt; audios -&gt; subtítulos</em>. Para ordenar las pistas hay que seleccionar de a una y utilizar los comandos <em>Subir</em> y <em>Bajar</em>.<br />
+<h2>¿Cómo configurar las pistas?</h2>
+<p><img alt="mkvmerge_entrada_conf_p" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_entrada_conf_p.jpg"></p>
+<p>Como se puede ver en la imagen se han agregado dos archivos. El primero es un MKV que contiene tres pistas (video, audio y subtítulos). El segundo es un archivo de subtítulos ASS.<br>
+Obsérvese que las pistas tienen un <em>checkbox</em>, las que estén marcadas formarán parte del archivo MKV de salida mientras que las que no lo estén serán descartadas. Una buena práctica de <em>encoder</em> es ordenar las pistas siguiendo la estructura <em>video -&gt; audios -&gt; subtítulos</em>. Para ordenar las pistas hay que seleccionar de a una y utilizar los comandos <em>Subir</em> y <em>Bajar</em>.<br>
 El área de opciones de pista tiene tres pestañas: <em>Opciones generales de la pista</em>, <em>Opciones específicas de formato</em> y <em>Opciones adicionales</em>. En este tutorial sólo se va a utilizar la primera de ellas ya que las otras dos son para el uso de usuarios más avanzados y no viene al caso explicar su funcionamiento porque es poco probable que alguna vez las utilicen.</p>
 <p>Dentro de las <em>Opciones generales de la pista</em> se va a utilizar:</p>
 <ul>
 <li>
-<p><strong><em>Nombre de pista:</em></strong><br />
+<p><strong><em>Nombre de pista:</em></strong><br>
 Aquí se puede escribir lo que se desee. Incluso este campo se puede dejar vacío. Por ejemplo, en la pista de subtítulos correspondiente a los episodios de <em>City Hunter 2</em> solemos colocar como nombre <em>Ashita no Walter</em>.</p>
 </li>
 <li>
-<p><strong><em>Idioma:</em></strong><br />
+<p><strong><em>Idioma:</em></strong><br>
 Aquí se selecciona el idioma de la pista. Es algo inútil para la pista de video (ya que no tiene un idioma en particular) por lo que es recomendable dejarla con indefinida.</p>
 </li>
 <li>
-<p><strong><em>Flag de pista predefinida/forzada:</em></strong><br />
-Son bastante similares, sirviendo para establecer pistas como predeterminadas. A la primera el reproductor de video puede ignorarla, mientras que a la segunda no. Como buena práctica es recomendable colocar lo mismo en ambas para cada pista.<br />
-Por ejemplo, se tienen 7 pistas. Una de video (V1), tres de audio (A1, A2 y A3) y tres de subtítulos (S1, S2 y S3). La pista de video se verá siempre sea cual sea el caso pero de igual modo colocamos ambos <em>flags</em> en <em>Sí</em>. De las pistas de audio queremos que A2 sea reproducida por defecto, entonces le colocamos ambos <em>flags</em> en <em>Sí</em> mientras que a las dos restantes se los colocamos en <em>No</em>. De las pistas de subtítulos queremos que no se vea ninguna por defecto entonces colocamos ambos <em>flags</em> en <em>No</em> para todas ellas.<br />
+<p><strong><em>Flag de pista predefinida/forzada:</em></strong><br>
+Son bastante similares, sirviendo para establecer pistas como predeterminadas. A la primera el reproductor de video puede ignorarla, mientras que a la segunda no. Como buena práctica es recomendable colocar lo mismo en ambas para cada pista.<br>
+Por ejemplo, se tienen 7 pistas. Una de video (V1), tres de audio (A1, A2 y A3) y tres de subtítulos (S1, S2 y S3). La pista de video se verá siempre sea cual sea el caso pero de igual modo colocamos ambos <em>flags</em> en <em>Sí</em>. De las pistas de audio queremos que A2 sea reproducida por defecto, entonces le colocamos ambos <em>flags</em> en <em>Sí</em> mientras que a las dos restantes se los colocamos en <em>No</em>. De las pistas de subtítulos queremos que no se vea ninguna por defecto entonces colocamos ambos <em>flags</em> en <em>No</em> para todas ellas.<br>
 Con esto se determinan los valores por defecto de reproducción, con el reproductor multimedia que usen van a poder elegir las otras pistas en caso de así desearlo.</p>
 </li>
 </ul>
-<h2 id="como-unir-archivos">¿Cómo unir archivos?</h2>
-<p>Para poder unir archivos hay que tener ciertas consideraciones en claro, <strong>es posible</strong> unir <em>Manzanas</em> con <em>Manzanas</em>, <em>Naranjas</em> con <em>Naranjas</em> y <em>Peras</em> con <em>Peras</em>, pero <strong>no es posible</strong> unir <em>Manzanas</em> con <em>Naranjas</em> o <em>Naranjas</em> con <em>Peras</em>. Aunque parezca muy tonto, es una forma muy práctica de entenderlo.<br />
+<h2>¿Cómo unir archivos?</h2>
+<p>Para poder unir archivos hay que tener ciertas consideraciones en claro, <strong>es posible</strong> unir <em>Manzanas</em> con <em>Manzanas</em>, <em>Naranjas</em> con <em>Naranjas</em> y <em>Peras</em> con <em>Peras</em>, pero <strong>no es posible</strong> unir <em>Manzanas</em> con <em>Naranjas</em> o <em>Naranjas</em> con <em>Peras</em>. Aunque parezca muy tonto, es una forma muy práctica de entenderlo.<br>
 En un principio, las pistas a unir deben ser del <strong>mismo tipo</strong> (video con video, audio con audio, subtítulos con subtítulos, etc.), poseer el <strong>mismo códec</strong> (H264 con H264, MP3 con MP3, pero no MP4 con AVI, o FLAC con WAV) y tener los <strong>mismos parámetros</strong> (misma resolución, fps, taza de muestreo, número de canales, entre otros).</p>
 <p>Se comienza añadiendo el primero de los archivos a unir utilizando el botón <em>Añadir</em>. Luego se selecciona un archivo a unir pero esta vez utilizando el botón <em>Unir</em>.</p>
-<p><img alt="mkvmerge_entrada_unir" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_entrada_unir.jpg" /></p>
+<p><img alt="mkvmerge_entrada_unir" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_entrada_unir.jpg"></p>
 <p>Como se puede observar, se ha decidido unir al archivo <em>25.mkv</em> los archivos <em>26.mkv</em> y <em>27.mkv</em>, además se ve que los archivos a unir comienzan con <em>++&gt;</em>. Las pistas se han ordenado así por sí solas, el video/audio/subtítulos del primero seguido de los videos/audios/subtítulos de los otros dos. Es importante destacar que un archivo que comienza con <em>++&gt;</em> nunca puede estar en primer lugar.  </p>
 <p>Esta es una opción muy poderosa ya que no es necesario recodificar. El archivo resultante contendrá una pista de video, una de audio y una de subtítulos, las cuales son una concatenación de las pistas correspondientes de los archivos utilizados.</p>
-<h2 id="como-utilizar-la-lista-de-tareas">¿Cómo utilizar la <em>Lista de tareas</em>?</h2>
-<p>La <em>Lista de tareas</em> es lo que normalmente se conoce como cola de trabajo, donde se añaden varias tareas que se irán realizando automáticamente una después de la otra conforme vayan terminando.<br />
-Para utilizarla, primero se define el archivo MKV a crear (utilizando todo la aprendido hasta el momento). Luego, con todo listo para crear dicho archivo, en lugar de utilizar el botón <em>Iniciar multiplexado</em> hay que usar el botón <em>Añadir a la lista de tareas</em>. Se preguntará el nombre para la tarea que se está añadiendo (utilizar el valor por defecto no está de más), luego de introducirlo se acepta la pantalla y con eso ya se agrega una tarea a la lista.<br />
-Se puede hacer uso de los botones <em>Quitar</em> o <em>Quitar todos</em> del área de archivos de entrada para comenzar a crear un nuevo MKV, o en el menú <em>Archivo</em>, <em>Nuevo</em> (o presionar Ctrl+N).<br />
+<h2>¿Cómo utilizar la <em>Lista de tareas</em>?</h2>
+<p>La <em>Lista de tareas</em> es lo que normalmente se conoce como cola de trabajo, donde se añaden varias tareas que se irán realizando automáticamente una después de la otra conforme vayan terminando.<br>
+Para utilizarla, primero se define el archivo MKV a crear (utilizando todo la aprendido hasta el momento). Luego, con todo listo para crear dicho archivo, en lugar de utilizar el botón <em>Iniciar multiplexado</em> hay que usar el botón <em>Añadir a la lista de tareas</em>. Se preguntará el nombre para la tarea que se está añadiendo (utilizar el valor por defecto no está de más), luego de introducirlo se acepta la pantalla y con eso ya se agrega una tarea a la lista.<br>
+Se puede hacer uso de los botones <em>Quitar</em> o <em>Quitar todos</em> del área de archivos de entrada para comenzar a crear un nuevo MKV, o en el menú <em>Archivo</em>, <em>Nuevo</em> (o presionar Ctrl+N).<br>
 Una vez que se termina de añadir todas las tareas que se desean, hay que ir a la lista para comenzar a utilizarla. Para ello se puede presionar el acceso directo Ctrl+J o ir al menú <em>Multiplexado</em> y seleccionar la opción <em>Gestionar tareas</em>.</p>
-<p><img alt="mkvmerge_entrada_ldt" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_entrada_ldt.jpg" /></p>
+<p><img alt="mkvmerge_entrada_ldt" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_entrada_ldt.jpg"></p>
 <p>Como se puede ver se han añadido tres tareas a la lista.</p>
 <ul>
 <li>Se pueden reordenar utilizando los botones <em>Subir</em> y <em>Bajar</em>.  </li>
@@ -152,144 +111,144 @@ Una vez que se termina de añadir todas las tareas que se desean, hay que ir a l
 <li><em>Iniciar</em> comienza a ejecutar todas las tareas habilitadas.  </li>
 <li><em>Iniciar selección</em> ejecuta todas la tareas habilitadas siempre y cuando se encuentren seleccionadas.  </li>
 </ul>
-<hr />
-<h1 id="3-pestana-adjuntos">3. Pestaña - Adjuntos:</h1>
-<h2 id="que-es-lo-que-contiene_1">¿Qué es lo que contiene?</h2>
+<hr>
+<h1>3. Pestaña - Adjuntos:</h1>
+<h2>¿Qué es lo que contiene?</h2>
 <ul>
 <li><strong><em>Archivos adjuntos:</em></strong></li>
 </ul>
-<p><img alt="mkvmerge_adjuntos_aa" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_adjuntos_aa.jpg" /></p>
+<p><img alt="mkvmerge_adjuntos_aa" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_adjuntos_aa.jpg"></p>
 <p>Aquí aparecen los archivos que se encuentran adjuntados en los archivos de entrada.</p>
 <ul>
 <li><strong><em>Adjuntos:</em></strong></li>
 </ul>
-<p><img alt="mkvmerge_adjuntos_a" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_adjuntos_a.jpg" /></p>
+<p><img alt="mkvmerge_adjuntos_a" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_adjuntos_a.jpg"></p>
 <p>Aquí es donde se colocan nuevos archivos que se quieran adjuntar.</p>
-<h2 id="que-son-los-archivos-adjuntos">¿Qué son los archivos adjuntos?</h2>
+<h2>¿Qué son los archivos adjuntos?</h2>
 <p>Los archivos adjuntos sirven para proveer información adicional acerca del archivo. Por ejemplo, fotos de tapas de CD o información adicional en formato texto, pero la más importante es la posibilidad de adjuntar fuentes (tipos de letra). Esto se debe a que si nos llega un archivo MKV con subtítulos ASS los cuales usan una fuente determinada que no se encuentra instalada en nuestro ordenador, los reproductores multimedia buscarán generar un caché de fuentes utilizando alguna que sí tengamos instalada lo que conllevará algo de tiempo. En cambio, si esa fuente no instalada se encuentra adjuntada en el archivo, no habrá ningún problema a la hora de la reproducción.</p>
-<h2 id="como-adjuntar-archivos">¿Cómo adjuntar archivos?</h2>
-<p>Dentro del área <em>Archivos adjuntos</em> aparecen los adjuntos de los archivos de entrada cargados, cada uno posee un <em>checkbox</em> con los que se pueden seleccionar cuáles se quedarán y cuáles no. Los botones <em>Habilitar todo</em> y <em>Deshabilitar todo</em> ayudan un poco en esta tarea.<br />
+<h2>¿Cómo adjuntar archivos?</h2>
+<p>Dentro del área <em>Archivos adjuntos</em> aparecen los adjuntos de los archivos de entrada cargados, cada uno posee un <em>checkbox</em> con los que se pueden seleccionar cuáles se quedarán y cuáles no. Los botones <em>Habilitar todo</em> y <em>Deshabilitar todo</em> ayudan un poco en esta tarea.<br>
 Si se quieren adjuntar nuevos archivos se debe ir al área <em>Adjuntos</em> y con el botón <em>Añadir</em> elegir los elementos que se necesiten. También se puede colocarles un nombre y una descripción. No se tocará nada de los campos <em>Tipo MIME</em> y <em>Estilo del archivo adjunto</em>.</p>
-<hr />
-<h1 id="4-pestana-opciones-generales">4. Pestaña - Opciones generales:</h1>
-<h2 id="que-es-lo-que-contiene_2">¿Qué es lo que contiene?</h2>
+<hr>
+<h1>4. Pestaña - Opciones generales:</h1>
+<h2>¿Qué es lo que contiene?</h2>
 <ul>
 <li><strong><em>Opciones generales:</em></strong></li>
 </ul>
-<p><img alt="mkvmerge_opciones_generales_og" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_opciones_generales_og.jpg" /></p>
+<p><img alt="mkvmerge_opciones_generales_og" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_opciones_generales_og.jpg"></p>
 <p>Se utiliza esta sección para colocarle un título al archivo, el cual aparecerá luego en la barra de menú de los reproductores multimedia.</p>
-<p><img alt="mkvmerge_opciones_generales_titulo" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_opciones_generales_titulo.jpg" /></p>
+<p><img alt="mkvmerge_opciones_generales_titulo" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_opciones_generales_titulo.jpg"></p>
 <ul>
 <li><strong><em>División:</em></strong></li>
 </ul>
-<p><img alt="mkvmerge_opciones_generales_div" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_opciones_generales_div.jpg" /></p>
+<p><img alt="mkvmerge_opciones_generales_div" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_opciones_generales_div.jpg"></p>
 <p>Así como se pueden unir archivos con esta aplicación, también se puede dividirlos.</p>
 <ul>
 <li><strong><em>Enlace de archivo/segmento:</em></strong></li>
 </ul>
-<p><img alt="mkvmerge_opciones_generales_eas" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_opciones_generales_eas.jpg" /></p>
+<p><img alt="mkvmerge_opciones_generales_eas" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_opciones_generales_eas.jpg"></p>
 <p>Se utiliza para vincular los archivos divididos pero no se utilizará esta función.</p>
 <ul>
 <li><strong><em>Capítulos:</em></strong></li>
 </ul>
-<p><img alt="mkvmerge_opciones_generales_caps" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_opciones_generales_caps.jpg" /></p>
+<p><img alt="mkvmerge_opciones_generales_caps" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_opciones_generales_caps.jpg"></p>
 <p>Sirve para agregar capítulos al archivo.</p>
-<h2 id="como-dividir-un-archivo">¿Cómo dividir un archivo?</h2>
+<h2>¿Cómo dividir un archivo?</h2>
 <p>Para poder dividir un archivo primero es necesario definir un <em>Modo de corte</em>:</p>
 <ul>
 <li>
-<p><strong><em>No dividir:</em></strong><br />
+<p><strong><em>No dividir:</em></strong><br>
 El archivo no será dividido.</p>
 </li>
 <li>
-<p><strong><em>Dividir según el tamaño:</em></strong><br />
-El archivo será dividido en base a un tamaño definido. El formato del tamaño es un número seguido de una letra que puede ser G, M o K siendo Gigabyte, Megabyte y Kilobyte respectivamente. Recordar que: 1K = 1024 Bytes, 1M = 1024K y 1G = 1024M.<br />
+<p><strong><em>Dividir según el tamaño:</em></strong><br>
+El archivo será dividido en base a un tamaño definido. El formato del tamaño es un número seguido de una letra que puede ser G, M o K siendo Gigabyte, Megabyte y Kilobyte respectivamente. Recordar que: 1K = 1024 Bytes, 1M = 1024K y 1G = 1024M.<br>
 Ejemplo: Si se tiene un archivo de 355M y se selecciona para dividirlo con un tamaño de 50M el resultado será 7 archivos de 50M y uno de 5M.</p>
 </li>
 <li>
-<p><strong><em>Dividir según la duración:</em></strong><br />
-El archivo será dividido en intervalos iguales de tiempo. El formato del tiempo es HH:MM:SS.nnnnnnnnn donde HH = Horas (se puede omitir), MM = Minutos, SS = Segundos y n = nanosegundos (se puede omitir), o el número de segundo seguido de la letra <em>s</em>.<br />
+<p><strong><em>Dividir según la duración:</em></strong><br>
+El archivo será dividido en intervalos iguales de tiempo. El formato del tiempo es HH:MM:SS.nnnnnnnnn donde HH = Horas (se puede omitir), MM = Minutos, SS = Segundos y n = nanosegundos (se puede omitir), o el número de segundo seguido de la letra <em>s</em>.<br>
 Ejemplo: Si se tiene un archivo de 23 minutos y se quiere dividir en intervalos de 5 minutos (00:05:00.000000000/05:00 o 300s) el resultado será 4 archivos de 5 minutos y uno de 3 minutos.</p>
 </li>
 <li>
-<p><strong><em>Dividir según los códigos de tiempo:</em></strong><br />
-El archivo será dividido según los códigos de tiempo especificados. El formato es el mismo que el del punto anterior, los códigos de tiempo se separan con comas y pueden usarse combinaciones de notación.<br />
+<p><strong><em>Dividir según los códigos de tiempo:</em></strong><br>
+El archivo será dividido según los códigos de tiempo especificados. El formato es el mismo que el del punto anterior, los códigos de tiempo se separan con comas y pueden usarse combinaciones de notación.<br>
 Ejemplo: Si se tiene un archivo de 30 minutos y se quiere dividirlo en cuatro partes que abarquen los minutos de 0 - 5, 5 - 15, 15 - 20 y 20 - 30, la notación sería <em>05:00,15:00,20:00</em>.</p>
 </li>
 <li>
-<p><strong><em>Dividir en partes según los códigos de tiempo:</em></strong><br />
-El archivo será dividido según códigos de tiempo que especifican intervalos. Un intervalo son dos códigos de tiempo separados por un '-'. Los intervalos pueden unirse utilizando el '+'.<br />
-¿Cuál es la diferencia con el método anterior? En el método anterior se está obligado a dividir todo el archivo, aquí se puede elegir con qué partes específicas quedarse.<br />
+<p><strong><em>Dividir en partes según los códigos de tiempo:</em></strong><br>
+El archivo será dividido según códigos de tiempo que especifican intervalos. Un intervalo son dos códigos de tiempo separados por un '-'. Los intervalos pueden unirse utilizando el '+'.<br>
+¿Cuál es la diferencia con el método anterior? En el método anterior se está obligado a dividir todo el archivo, aquí se puede elegir con qué partes específicas quedarse.<br>
 Ejemplo: Si se tiene un archivo de 40 minutos y se quieren crear dos archivos donde el primero son los primeros 10 minutos y el segundo es el tramo que va desde el minuto 20 al 30 más el tramo que va desde el minuto 35 al 40, la notación sería <em>00:00-10:00,20:00-30:00,+35:00-40:00</em>.</p>
 </li>
 <li>
-<p><strong><em>Dividir en partes según los números de fotograma/campo:</em></strong><br />
-El archivo será dividido según números de fotogramas que especifican intervalos. Su funcionamiento es exactamente igual al del punto anterior sólo que en lugar de códigos de tiempo se utilizarán números de fotogramas. Los fotogramas comienzan desde 1. Sólo será posible dividir usando este modo si se tiene seleccionada para la salida al menos una pista de video.<br />
+<p><strong><em>Dividir en partes según los números de fotograma/campo:</em></strong><br>
+El archivo será dividido según números de fotogramas que especifican intervalos. Su funcionamiento es exactamente igual al del punto anterior sólo que en lugar de códigos de tiempo se utilizarán números de fotogramas. Los fotogramas comienzan desde 1. Sólo será posible dividir usando este modo si se tiene seleccionada para la salida al menos una pista de video.<br>
 Ejemplo: Si se tiene un archivo con 10000 fotogramas y se quiere como resultado tres archivos donde el primero es lo que está comprendido entre los campos 0 a 200 más del 800 al 1000, el segundo es del 3000 al 5000 más 6000 al 8000 y el último es del 9000 al 9100 más 9500 al 9600, la notación sería <em>0-200,+800-1000,3000-5000,+6000-8000,9000-9001,+9500-9600</em>.</p>
 </li>
 <li>
-<p><strong><em>Dividir según los números de fotograma/campo:</em></strong><br />
-Funciona de igual manera que <em>Dividir según los códigos de tiempo</em>, sólo que respetando las condiciones para los fotogramas explicadas en el punto anterior.<br />
+<p><strong><em>Dividir según los números de fotograma/campo:</em></strong><br>
+Funciona de igual manera que <em>Dividir según los códigos de tiempo</em>, sólo que respetando las condiciones para los fotogramas explicadas en el punto anterior.<br>
 Ejemplo: Si se tiene un archivo de 5000 campos y se quiere dividirlo en dos partes de igual tamaño, la notación sería <em>2500</em>.</p>
 </li>
 <li>
-<p><strong><em>Dividir según los capítulos:</em></strong><br />
-El archivo será dividido en base a los capítulos del archivo de entrada. Se hablará más específicamente de los capítulos en la sección 5. Los capítulos comienzan desde el <em>1</em> y se separan con comas, o bien se puede utilizar la palabra clave <em>all</em> para dividir todos los capítulos.<br />
+<p><strong><em>Dividir según los capítulos:</em></strong><br>
+El archivo será dividido en base a los capítulos del archivo de entrada. Se hablará más específicamente de los capítulos en la sección 5. Los capítulos comienzan desde el <em>1</em> y se separan con comas, o bien se puede utilizar la palabra clave <em>all</em> para dividir todos los capítulos.<br>
 Ejemplo: Si se tiene un archivo que contiene 7 capítulos y se quiere dividirlo por los capítulos 1, 5, 6 y 7, la notación sería <em>1,5,6,7</em>.</p>
 </li>
 </ul>
-<p>La opción <em>Número máx. de archivos</em> sirve para definir cuántos archivos de salida se tendrán en total, básicamente especifica un límite.<br />
+<p>La opción <em>Número máx. de archivos</em> sirve para definir cuántos archivos de salida se tendrán en total, básicamente especifica un límite.<br>
 Ejemplo: Si se tiene un archivo cuyo resultado de su división serán 20 archivos, al tener el <em>Número máx. de archivos</em> en 10, sólo se obtendrán 10 en total correspondientes a los 10 primeros de esos supuestos 20.</p>
 <p>La opción <em>Archivos vinculados</em> sirve para tener una referencia relativa en las partes divididas al archivo del que provienen pero no se utilizará esta opción ya que no todos los reproductores son compatibles con ella.</p>
-<h2 id="como-agregar-capitulos">¿Cómo agregar capítulos?</h2>
+<h2>¿Cómo agregar capítulos?</h2>
 <p>En el área de <em>Capítulos</em> hay que utilizar el botón <em>Explorar</em> para seleccionar el archivo de capítulos deseado. Se hablará más específicamente de los capítulos en la sección 5.</p>
-<hr />
-<h1 id="5-pestana-editor-de-capitulos">5. Pestaña - Editor de capítulos:</h1>
-<h2 id="que-es-lo-que-contiene_3">¿Qué es lo que contiene?</h2>
-<p><img alt="mkvmerge_editor_capitulos" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_editor_capitulos.jpg" /></p>
+<hr>
+<h1>5. Pestaña - Editor de capítulos:</h1>
+<h2>¿Qué es lo que contiene?</h2>
+<p><img alt="mkvmerge_editor_capitulos" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_editor_capitulos.jpg"></p>
 <p>Prácticamente toda esta pestaña contiene al editor de capítulos en sí.</p>
-<h2 id="que-son-los-capitulos-y-para-que-sirven">¿Qué son los capítulos y para qué sirven?</h2>
-<p>Un capítulo es una entidad compuesta por cuatro partes: UID de la pista a la que se aplica, un nombre/título, un tiempo de inicio y una codificación de lenguaje asociada, a los que se le pueden sumar otros datos adicionales.<br />
+<h2>¿Qué son los capítulos y para qué sirven?</h2>
+<p>Un capítulo es una entidad compuesta por cuatro partes: UID de la pista a la que se aplica, un nombre/título, un tiempo de inicio y una codificación de lenguaje asociada, a los que se le pueden sumar otros datos adicionales.<br>
 Dicho de manera más simple, son sectores del video delimitados por tiempos que conllevan una etiqueta para diferenciarlos.</p>
-<p><img alt="mkvmerge_editor_capitulos_ejemplo" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_editor_capitulos_ejemplo.jpg" /></p>
+<p><img alt="mkvmerge_editor_capitulos_ejemplo" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_editor_capitulos_ejemplo.jpg"></p>
 <p>Como se puede observar en la imagen, al colocar el cursor sobre la línea de tiempo del reproductor aparecen unas marcas que indican los capítulos y dependiendo de sobre cuál se esté apuntando, saldrá un indicador con su nombre correspondiente (en este caso <em>Opening</em>).</p>
 <p>La ventaja principal de la utilización de capítulos es que los reproductores multimedia permiten saltar la reproducción al anterior o siguiente capítulo. De este modo y para el caso de la imagen, en lugar de tener que saltar el <em>opening</em> manualmente buscando dónde termina, sólo se tiene que usar una combinación de teclas propia de cada reproductor (Shift+N en el caso del VLC) que nos lleve al siguiente capítulo.</p>
-<h2 id="como-crear-un-archivo-de-capitulos">¿Cómo crear un archivo de capítulos?</h2>
+<h2>¿Cómo crear un archivo de capítulos?</h2>
 <p>Existen dos formas de crear archivos de capítulos. La primera es utilizando el editor de capítulos dando como resultado un archivo XML. La segunda es simplemente crear un archivo de texto con formato de capítulos OGM. Los archivos XML son muy buenos y tienen mucho potencial, sin embargo, esto sólo será útil para aquellos usuarios muy experimentados que quieran realizar alguna tarea muy específica. Por otro lado, el formato OGM de capítulos es muy simple y fácil de entender y de crear, razón por la cual se recomienda.</p>
 <p>Supóngase que se desean crear los capítulos: <em>Opening</em>, <em>Introducción</em>, <em>Parte A</em>, <em>Parte B</em>, <em>Ending</em> y <em>Próximamente</em>, para un episodio de <em>City Hunter</em> utilizando el formato de capítulos OGM. Entonces la estructura del archivo de texto será:</p>
-<p>CHAPTER01=00:00:00.000<br />
-CHAPTER01NAME=Opening<br />
-CHAPTER02=00:01:32.000<br />
-CHAPTER02NAME=Introducción<br />
-CHAPTER03=00:02:14.000<br />
-CHAPTER04NAME=Parte A<br />
-CHAPTER06=00:10:48.000<br />
-CHAPTER06NAME=Parte B<br />
-CHAPTER07=00:22:27.000<br />
-CHAPTER07NAME=Ending<br />
-CHAPTER08=00:23:36.000<br />
+<p>CHAPTER01=00:00:00.000<br>
+CHAPTER01NAME=Opening<br>
+CHAPTER02=00:01:32.000<br>
+CHAPTER02NAME=Introducción<br>
+CHAPTER03=00:02:14.000<br>
+CHAPTER04NAME=Parte A<br>
+CHAPTER06=00:10:48.000<br>
+CHAPTER06NAME=Parte B<br>
+CHAPTER07=00:22:27.000<br>
+CHAPTER07NAME=Ending<br>
+CHAPTER08=00:23:36.000<br>
 CHAPTER08NAME=Próximamente  </p>
-<p>Esto se lee como:<br />
-Desde el tiempo 00:00:00.000 al 00:01:32.000 se encuentra el <em>Opening</em>.<br />
-Desde el tiempo 00:01:32.000 al 00:02:14.000 se encuentra el <em>Introducción</em>.<br />
-Desde el tiempo 00:02:14.000 al 00:10:48.000 se encuentra el <em>Parte A</em>.<br />
-Desde el tiempo 00:10:48.000 al 00:22:27.000 se encuentra el <em>Parte B</em>.<br />
-Desde el tiempo 00:22:27.000 al 00:23:36.000 se encuentra el <em>Ending</em>.<br />
+<p>Esto se lee como:<br>
+Desde el tiempo 00:00:00.000 al 00:01:32.000 se encuentra el <em>Opening</em>.<br>
+Desde el tiempo 00:01:32.000 al 00:02:14.000 se encuentra el <em>Introducción</em>.<br>
+Desde el tiempo 00:02:14.000 al 00:10:48.000 se encuentra el <em>Parte A</em>.<br>
+Desde el tiempo 00:10:48.000 al 00:22:27.000 se encuentra el <em>Parte B</em>.<br>
+Desde el tiempo 00:22:27.000 al 00:23:36.000 se encuentra el <em>Ending</em>.<br>
 Desde el tiempo 00:23:36.000 hasta el final se encuentra el <em>Próximamente</em>.  </p>
-<p>Los capítulos comienzan desde el 01.<br />
-El tiempo de inicio se identifica con <em>CHAPTER##=</em>.<br />
-La etiqueta se coloca con <em>CHAPTER##NAME=</em>.<br />
-Los tiempos tienen el formato HH:MM:SS.mmm.<br />
+<p>Los capítulos comienzan desde el 01.<br>
+El tiempo de inicio se identifica con <em>CHAPTER##=</em>.<br>
+La etiqueta se coloca con <em>CHAPTER##NAME=</em>.<br>
+Los tiempos tienen el formato HH:MM:SS.mmm.<br>
 A los tiempos los deben obtener manualmente del archivo de video.  </p>
-<hr />
-<h1 id="6-editor-de-encabezado">6. Editor de encabezado:</h1>
-<h2 id="para-que-sirve-el-editor-de-encabezado">¿Para qué sirve el editor de encabezado?</h2>
+<hr>
+<h1>6. Editor de encabezado:</h1>
+<h2>¿Para qué sirve el editor de encabezado?</h2>
 <p>Sirve para modificar información de los archivos MKV sin tener que volver a crearlos.</p>
-<h2 id="como-utilizar-el-editor-de-encabezado">¿Cómo utilizar el editor de encabezado?</h2>
+<h2>¿Cómo utilizar el editor de encabezado?</h2>
 <p>El <em>Editor de encabezado</em> se encuentra en el menú <em>Archivo</em>. Una vez abierto se deberá cargar un archivo para editar. Teniendo un archivo cargado aparecerán varias líneas de información, una para la información general y una por cada pista que contenga el video. O sea, para un archivo que contiene una pista de video, tres de audio y cuatro de subtítulos, aparecerán nueve líneas de información.  </p>
-<p><img alt="mkvmerge_editor_encabezado" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_editor_encabezado.jpg" /></p>
+<p><img alt="mkvmerge_editor_encabezado" src="http://www.ashitanowalter.moe/images/tutorials/mkvmerge_editor_encabezado.jpg"></p>
 <p>Al desplegar cada una de las líneas se puede apreciar información ya conocida y editarla según preferencia. Es recomendable limitarse a editar los campos conocidos. Una vez terminado el trabajo de edición se guardan los cambios realizados.</p>
-<hr />
+<hr>
     
     <div class="comments">
       <h2>Comentarios</h2>
